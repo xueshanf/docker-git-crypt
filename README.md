@@ -1,7 +1,8 @@
 Docker git-crypt Alpine image
 =============================
 
-Git-crypt in container.
+[Git-crypt](https://github.com/AGWA/git-crypt) in docker.
+
 This repo triggers auto-build and push git-crypt image to dockerhub.com/u/xueshanf/git-crypt.
 
 The container expose volume /repo, which you can bind-mount git repository to /repo.
