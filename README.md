@@ -1,8 +1,8 @@
 Docker git-crypt Alpine image
 =============================
 
-Git-crypt in container. See Dockerfile.
-This repo triggers auto-build and push images to dockerhub.com/u/xueshanf/git-crypt.
+Git-crypt in container.
+This repo triggers auto-build and push git-crypt image to dockerhub.com/u/xueshanf/git-crypt.
 
 The container expose volume /repo, which you can bind-mount git repository to /repo.
 
@@ -29,22 +29,25 @@ Example usages
 
 Make sure the git-crypt wrapper command is in your command path.
 
-```
-$ git-crypt help
-```
+* Command help
+
+	```
+	$ git-crypt help
+	```
 
 * Check encrypted files:
+	
+	```
+	$ git-crypt status -e
+	```
+* Check un-encrypted files
 
-```
-$ git-crypt status -e
-```
-* Check un-encrypted files:
-```
-$ git-crypt status -u
-```
-* Check un-encrypted files:
+	```
+	$ git-crypt status -u
+	```
 
-Unlock encrypted file:
-```
-$ git-crypt unlock
-```
+* Unlock encrypted file
+
+	```
+	$ git-crypt unlock
+	```
