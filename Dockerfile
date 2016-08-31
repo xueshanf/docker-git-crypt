@@ -8,6 +8,7 @@ RUN apk --update add \
    git \
    g++ \
    make \
+   openssh \
    openssl \
    openssl-dev \
    && rm -rf /var/cache/apk/*
