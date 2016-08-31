@@ -17,6 +17,7 @@ If use shared key:
 docker pull xueshanf/git-crypt
 exec docker run -it -v /path/to/repo:/repo -v /path/to/shared-git-crypt-key:/repo/.git/.git-crypt/keys/default xueshanf/git-crypt git-crypt "$@"
 ```
+
 If use gpg private key:
 
 ```
