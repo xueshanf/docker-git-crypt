@@ -4,6 +4,7 @@ MAINTAINER Xueshan Feng <xueshan.feng@gmail.com>
 ENV VERSION 0.5.0-1
 
 RUN apk --update add \
+   bash \
    curl \
    git \
    g++ \
