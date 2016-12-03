@@ -4,6 +4,8 @@
 
 This repo triggers auto-build and pushes the git-crypt image to dockerhub.com/u/xueshanf/git-crypt.
 
+You can use git-crypt container on systems that git-crypt packages aren't available, such as CoreOS.
+
 The container exposes volume /repo, to which you can bind-mount a git repository.
 
 ## Create a git-crypt shell wrapper
