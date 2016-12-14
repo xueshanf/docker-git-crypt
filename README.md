@@ -22,6 +22,8 @@ exec docker run -it -v /path/to/repo:/repo -v /path/to/shared-git-crypt-key:/rep
 
 If use gpg private key:
 
+Save the following script as /opt/bin/git-crypt (or whatever path in your command path):
+
 ```
 #!/bin/bash -e
 docker pull xueshanf/git-crypt
@@ -35,22 +37,22 @@ Make sure the above git-crypt wrapper command is in your command path.
 * Command help
 
 	```
-	$ git-crypt help
+	$ /opt/bin/git-crypt help
 	```
 
 * Check encrypted files:
 	
 	```
-	$ git-crypt status -e
+	$ /opt/bin/git-crypt status -e
 	```
 * Check un-encrypted files
 
 	```
-	$ git-crypt status -u
+	$ /opt/bin/git-crypt status -u
 	```
 
 * Unlock encrypted file
 
 	```
-	$ git-crypt unlock
+	$ /opt/bin/git-crypt unlock
 	```
