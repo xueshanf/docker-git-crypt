@@ -10,7 +10,7 @@ The container exposes volume /repo, to which you can bind-mount a git repository
 
 ## Create a git-crypt shell wrapper
 
-To make it easy to use, create a shell wrapper *git-crypt* and saved it as */usr/local/bin/git-crypt*.
+To make it easy to use, create a shell wrapper *git-crypt* and saved it as */opt/bin/git-crypt*.
 
 If use shared key:
 
