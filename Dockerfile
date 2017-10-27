@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:edge
 MAINTAINER Xueshan Feng <xueshan.feng@gmail.com>
 
 ENV VERSION 0.5.0-2
